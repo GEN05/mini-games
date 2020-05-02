@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="777.0" maxWidth="565.0" minHeight="615.0" minWidth="565.0" prefHeight="660.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <effect>
+        <DisplacementMap>
+            <mapData>
+                <FloatMap />
+            </mapData>
+        </DisplacementMap>
+    </effect>
+    <children>
+        <Button focusTraversable="false" layoutX="114.0" layoutY="320.0" mnemonicParsing="false" onAction="#four" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="4" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="400.0" layoutY="196.0" mnemonicParsing="false" onAction="#three" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="3" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="256.0" layoutY="196.0" mnemonicParsing="false" onAction="#two" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="2" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="114.0" layoutY="196.0" mnemonicParsing="false" onAction="#one" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="1" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="114.0" layoutY="445.0" mnemonicParsing="false" onAction="#seven" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="7" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="256.0" layoutY="445.0" mnemonicParsing="false" onAction="#eight" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="8" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="256.0" layoutY="320.0" mnemonicParsing="false" onAction="#five" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="5" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="400.0" layoutY="445.0" mnemonicParsing="false" onAction="#nine" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="9" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="400.0" layoutY="320.0" mnemonicParsing="false" onAction="#six" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="6" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button focusTraversable="false" layoutX="256.0" layoutY="561.0" mnemonicParsing="false" onAction="#zero" onKeyPressed="#press" prefHeight="80.0" prefWidth="80.0" text="0" textAlignment="CENTER">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Button>
+        <Button defaultButton="true" layoutX="28.0" layoutY="561.0" mnemonicParsing="false" onAction="#ok" onKeyPressed="#press" prefHeight="95.0" prefWidth="173.0" text="Старт">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </Button>
+        <TextField fx:id="num1Field" editable="false" focusTraversable="false" layoutX="35.0" layoutY="86.0" onKeyPressed="#press" prefHeight="100.0" prefWidth="100.0">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </TextField>
+        <TextField alignment="CENTER" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="135.0" layoutY="86.0" onKeyPressed="#press" prefHeight="100.0" prefWidth="100.0" scaleShape="false" text="*">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="num2Field" editable="false" focusTraversable="false" layoutX="235.0" layoutY="86.0" onKeyPressed="#press" prefHeight="100.0" prefWidth="100.0">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </TextField>
+        <TextField alignment="CENTER" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="334.0" layoutY="86.0" onKeyPressed="#press" prefHeight="100.0" prefWidth="100.0" scaleShape="false" text="=">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="resultField" editable="false" focusTraversable="false" layoutX="434.0" layoutY="86.0" prefHeight="100.0" prefWidth="100.0">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </TextField>
+        <ProgressBar fx:id="progress" layoutX="36.0" layoutY="8.0" prefHeight="78.0" prefWidth="499.0" progress="0.0">
+            <effect>
+                <InnerShadow choke="0.59" color="#44c63b" height="92.01" radius="48.7325" width="104.92" />
+            </effect>
+        </ProgressBar>
+        <Label fx:id="text" layoutX="47.0" layoutY="19.0" prefHeight="56.0" prefWidth="481.0" textOverrun="CENTER_WORD_ELLIPSIS">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
